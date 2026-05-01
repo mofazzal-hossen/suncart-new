@@ -32,8 +32,8 @@ export default function RegisterPage() {
         setError(result.error.message || "Registration failed. Try again.");
         toast.error("Registration failed.");
       } else {
-        toast.success("Account created! Please sign in. ☀️");
-        router.push("/login");
+        toast.success("Account created successfully! ☀️");
+        router.push("/");
       }
     } catch (err) {
       setError("Something went wrong. Please try again.");

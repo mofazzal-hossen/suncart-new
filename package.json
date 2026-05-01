@@ -11,7 +11,7 @@
   "dependencies": {
     "@better-auth/mongo-adapter": "^1.6.9",
     "animate.css": "^4.1.1",
-    "better-auth": "^1.2.7",
+    "better-auth": "^1.6.9",
     "embla-carousel-autoplay": "^8.5.1",
     "embla-carousel-react": "^8.5.1",
     "mongodb": "^7.2.0",
