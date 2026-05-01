@@ -18,6 +18,9 @@ export default function Footer() {
             <p className="text-sand-100/50 text-sm leading-relaxed mb-6">
               Your ultimate summer shopping destination. Premium quality products for sun, sand, and sea lovers.
             </p>
+
+
+
             <div className="flex gap-4">
               {[FiInstagram, FiFacebook, FiTwitter].map((Icon, i) => (
                 <a

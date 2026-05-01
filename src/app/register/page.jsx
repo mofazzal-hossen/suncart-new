@@ -20,6 +20,10 @@ export default function RegisterPage() {
     setLoading(true);
     setError("");
 
+
+
+
+    
     try {
       const result = await signUp.email({
         name: data.name,
