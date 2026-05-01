@@ -23,7 +23,7 @@ export default function RegisterPage() {
 
 
 
-    
+
     try {
       const result = await signUp.email({
         name: data.name,
@@ -83,6 +83,9 @@ export default function RegisterPage() {
             onClick={handleGoogleLogin}
             className="w-full flex items-center justify-center gap-3 glass border border-white/10 hover:border-sun-400/30 py-3.5 rounded-xl text-sand-100/80 hover:text-sand-100 transition-all mb-5 font-medium"
           >
+
+
+
             <FcGoogle className="text-xl" />
             Sign up with Google
           </button>
@@ -117,7 +120,7 @@ export default function RegisterPage() {
                 <FiMail className="absolute left-4 top-1/2 -translate-y-1/2 text-sand-100/30" />
                 <input
                   type="email"
-                  {...register("email", { 
+                  {...register("email", {
                     required: "Email is required",
                     pattern: { value: /^\S+@\S+$/i, message: "Invalid email address" }
                   })}
@@ -151,7 +154,7 @@ export default function RegisterPage() {
                 <FiLock className="absolute left-4 top-1/2 -translate-y-1/2 text-sand-100/30" />
                 <input
                   type={showPassword ? "text" : "password"}
-                  {...register("password", { 
+                  {...register("password", {
                     required: "Password is required",
                     minLength: { value: 8, message: "Must be at least 8 characters" }
                   })}
