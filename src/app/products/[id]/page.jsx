@@ -7,14 +7,16 @@ import { headers } from "next/headers";
 import { FiStar, FiArrowLeft, FiShield, FiPackage, FiTruck, FiRefreshCw } from "react-icons/fi";
 
 export default async function ProductDetailPage({ params }) {
+  const { id } = await params;
+
   // Check authentication
   const session = await auth.api.getSession({ headers: await headers() });
 
   if (!session) {
-    redirect(`/login?redirect=/products/${params.id}`);
+    redirect(`/login?redirect=/products/${id}`);
   }
 
-  const product = products.find((p) => p.id === parseInt(params.id));
+  const product = products.find((p) => p.id === parseInt(id));
 
   if (!product) {
     notFound();
