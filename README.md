@@ -7,8 +7,8 @@
 ---
 
 ## 🌐 Live URL
-
-**[https://suncart.vercel.app](https://suncart.vercel.app)**
+[
+https://suncart-new.vercel.app
 
 ---
 
